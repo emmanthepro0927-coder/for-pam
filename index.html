@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>For Pam</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1st Monthsary, Pam!</title>
+    <style>
+        /* Base Aesthetic Setup */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5eae1; /* Soft Creamy Warm Background */
+            font-family: 'Georgia', serif;
+            color: #4a3321; /* Cozy Deep Brown */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Container for the Content */
+        .container {
+            max-width: 600px;
+            width: 85%;
+            background-color: #fffbf7; /* Warm Soft White Card */
+            padding: 40px 25px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(110, 80, 59, 0.06);
+            text-align: center;
+            border: 1px solid #ebdcd0;
+            position: relative;
+            z-index: 10;
+            margin: 40px 0;
+        }
+
+        /* Decorative Header */
+        h1 {
+            font-size: 2rem;
+            color: #7c5c43;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+
+        .date {
+            font-style: italic;
+            color: #b09681;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        /* GIF Center Zone */
+        .media-box {
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Standardized for the animated graphic */
+        .main-gif {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        /* Message Styling */
+        .love-letter {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1rem;
+            color: #543f30;
+            background-color: #faf4ee;
+            padding: 22px;
+            border-radius: 16px;
+            border-left: 4px solid #c4a48c;
+            margin: 25px 0;
+        }
+
+        .signature {
+            text-align: right;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #7c5c43;
+            margin-top: 15px;
+        }
+
+        /* Corner Stickers */
+        .sticker {
+            position: absolute;
+            font-size: 2.2rem;
+            pointer-events: none;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
+        }
+        .top-left { top: 15px; left: 15px; }
+        .bottom-right { bottom: 15px; right: 15px; }
+
+        /* Falling Flower Petals Animation */
+        .petal {
+            position: fixed;
+            top: -10px;
+            pointer-events: none;
+            z-index: 1;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                top: -10%;
+                transform: translateX(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                top: 100%;
+                transform: translateX(70px) rotate(360deg);
+                opacity: 0.25;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Falling Aesthetic Elements -->
+    <script>
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.classList.add('petal');
+            
+            // Sweet matching theme emojis (Strawberries, Blueberries, Hearts, Flowers)
+            const elements = ['🍓', '🫐', '🌸', '减轻', '✨', '🤎'];
+            petal.innerHTML = elements[Math.floor(Math.random() * elements.length)];
+            
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.animationDuration = Math.random() * 3 + 4 + 's'; 
+            petal.style.fontSize = Math.random() * 10 + 14 + 'px';
+            petal.style.opacity = Math.random() * 0.4 + 0.4;
+            
+            document.body.appendChild(petal);
+
+            setTimeout(() => {
+                petal.remove();
+            }, 7000);
+        }
+        setInterval(createPetal, 450);
+    </script>
+
+    <div class="container">
+        <!-- Matching Berry Stickers in the Corners! -->
+        <span class="sticker top-left">🍓</span>
+        <span class="sticker bottom-right">🫐</span>
+
+        <h1>Happy 1st Monthsary, Pam!</h1>
+        <div class="date">One month down, a lifetime to go.</div>
+
+        <!-- GIF Center -->
+        <div class="media-box">
+            <!-- Official high-reliability Google animated heart graphic -->
+            <img class="main-gif" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f496/512.gif" alt="Sparkling Heart">
+        </div>
+
+        <!-- Your Heartfelt Letter -->
+        <div class="love-letter">
+            Hello, You. It's been a month since we became together. A month full of laughter, crazy stuff, and love. Though Ldr, you've never fail to make me blush and everyday I fall in love with you. You're the best gift that God gave to me and I promise to cherish you forever.<br><br>
+            This is only the beginning of our never ending love, a book with never ending story of us and I hope that in every struggles, problems, misunderstandings that we will both face, we'll face it together — to be stronger and love each other better. I love you so much, Pam. I promise to be a better man for you and for us to be forever.
+            
+            <div class="signature">— Yours truly, Ralph</div>
+        </div>
+
+        <!-- Small Aesthetic Divider -->
+        <div style="color: #d2beae; font-size: 1.2rem; letter-spacing: 3px;">✿ 🍓 ✿</div>
+    </div>
+
+</body>
+</html>
+    
+  </body>
+  
+</html>
